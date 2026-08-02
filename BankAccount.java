@@ -4,6 +4,13 @@ class BankAccount{
     private double balance;
     
 
+    public BankAccount(int accountNumber, String accountName, double balance) {
+        this.accountNumber = accountNumber;
+        this.accountName = accountName;
+        this.balance = balance;
+    }
+
+
     public int getAccountNumber() {
         return accountNumber;
     }
@@ -35,12 +42,13 @@ class BankAccount{
 
 
     void displayDetails(){
-        System.out.println("-----ACCOUND NUMBER-----");
-        System.out.println(getAccountNumber());
-        System.out.println("-----ACCOUND NAME-----");
-        System.out.println(getAccountNumber());
-        System.out.println("-----BALANCE-----");
-        System.out.println(getBalance());
+        System.out.println("Detailes are added successfully");
+        System.out.print("ACCOUND NUMBER:");
+        System.out.println(accountNumber);
+        System.out.print("ACCOUND NAME:");
+        System.out.println(accountName);
+        System.out.print("BALANCE:");
+        System.out.println(balance);
     }
 
 }
