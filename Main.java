@@ -11,8 +11,19 @@ public class Main {
         System.out.println("Enter the balance:");
         double balance=sc.nextDouble();
         BankAccount account=new BankAccount(accountNumber,accountName,balance);
-         account.displayDetails();
-         sc.close();
+        BankOperation operation=new BankOperation();
+
+        System.out.print("\nEnter deposit amount:");
+        double depositAmount=sc.nextDouble();
+        operation.deposite(account,depositAmount);
+        operation.checkBalance(account);
+        System.out.println("\nEnter withdraw amount:");
+        double withdrawAmount=sc.nextDouble();
+        operation.withdraw(account,withdrawAmount);
+        operation.checkBalance(account);
+        account.displayDetails();
+
+        sc.close();
 
     }
    
