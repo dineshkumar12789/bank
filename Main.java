@@ -33,6 +33,7 @@ public class Main {
         double withdrawAmount=sc.nextDouble();
         operation.withdraw(account,withdrawAmount);
         operation.checkBalance(account);
+        
         account.displayDetails();
 
         sc.close();

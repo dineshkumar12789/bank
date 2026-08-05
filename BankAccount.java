@@ -41,14 +41,14 @@ class BankAccount{
     }
 
 
-    void displayDetails(){
+     public void displayDetails(){
         System.out.println("Detailes are added successfully");
         System.out.print("ACCOUND NUMBER:");
-        System.out.println(accountNumber);
+        System.out.println(getAccountNumber());
         System.out.print("ACCOUND NAME:");
-        System.out.println(accountName);
+        System.out.println(getAccountName());
         System.out.print("BALANCE:");
-        System.out.println(balance);
+        System.out.println(getBalance());
     }
 
 }
