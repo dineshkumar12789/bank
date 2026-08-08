@@ -10,6 +10,9 @@
             System.out.println("Over Draft Facility : Available");
 
         }
+        public void calculateInterest(){
+            System.out.println("No interest is calculated for current account");
+        }
 
 
 

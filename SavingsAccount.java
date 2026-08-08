@@ -10,6 +10,13 @@
             System.out.println("Interest Rate Is  :  4%");
 
         }
+        @Override
+        public void calculateInterest(){
+            double interest=getBalance()*0.04;
+            System.out.println("interest" +  ":" +interest);
+        
+
+        }
 
 
     

@@ -1,4 +1,4 @@
-class BankAccount{
+abstract class BankAccount{
     private int accountNumber;
     private String accountName;
     private double balance;
@@ -50,5 +50,6 @@ class BankAccount{
         System.out.print("BALANCE:");
         System.out.println(getBalance());
     }
+    public abstract void calculateInterest();
 
 }

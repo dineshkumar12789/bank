@@ -35,6 +35,7 @@ public class Main {
         operation.checkBalance(account);
         
         account.displayDetails();
+        account.calculateInterest();
 
         sc.close();
 
