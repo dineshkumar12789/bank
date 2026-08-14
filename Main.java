@@ -24,16 +24,15 @@ public class Main {
         else{
             account=new CurrentAccount(accountNumber,accountName,balance);
         }
-        BankOperation operation=new BankOperation();
+       
         System.out.print("\nEnter deposit amount:");
         double depositAmount=sc.nextDouble();
-        operation.deposite(account,depositAmount);
-        operation.checkBalance(account);
+        account.deposite(depositAmount);
+        account.checkBalance();
         System.out.println("\nEnter withdraw amount:");
         double withdrawAmount=sc.nextDouble();
-        operation.withdraw(account,withdrawAmount);
-        operation.checkBalance(account);
-        
+        account.withdraw(withdrawAmount);
+        account.checkBalance();
         account.displayDetails();
         account.calculateInterest();
 

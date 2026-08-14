@@ -1,4 +1,4 @@
-abstract class BankAccount{
+abstract class BankAccount implements BankOperation{
     private int accountNumber;
     private String accountName;
     private double balance;
@@ -39,6 +39,35 @@ abstract class BankAccount{
     public void setBalance(double balance) {
         this.balance = balance;
     }
+    @Override
+     public void deposite(double amount){
+
+        if(amount>0){
+            balance+=amount;
+            System.out.println("Amount deposited sucessfully");
+        }
+        else{
+            System.out.println("Invalid amount");
+        }    
+        
+    }
+    @Override
+    public void withdraw(double amount){
+        if(amount<=0){
+            System.out.println("Invalid amount");
+        }
+        else{
+           balance-=amount;
+            System.out.println("Amount withdraw successfully");
+        }
+        
+    }@Override
+    public void checkBalance(){
+        System.out.println("Current balance is"+":"+ balance);
+    }
+   
+    
+
 
 
      public void displayDetails(){
